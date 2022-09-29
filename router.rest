@@ -1,0 +1,33 @@
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "test3",
+    "email": "test3@gmail.com",
+    "password":"test3p1234"
+}
+
+###
+
+GET http://localhost:5000/users/6330969d7094c2082d3b1803
+
+###
+DELETE http://localhost:5000/users/632f51700730889f466e4473
+
+###
+PATCH http://localhost:5000/users/632f41b518498a07dd770df8
+Content-Type: application/json
+
+{
+    "status": "false"
+}
+
+###
+POST http://localhost:5000/users/login
+Content-Type: application/json
+
+{
+    "email": "shuh@gmail.com",
+    "password": "shuh1234"
+}
+
